@@ -1,37 +1,40 @@
 import React from "react";
-import "./style.css";
+import header from "../img/header.png"
+import "./Login.css";
 
-export const Login = () => {
+const Login = () => {
     return (
         <div className="login">
             <div className="overlap-wrapper">
                 <div className="overlap">
                     <div className="desktop" />
-                    <footer className="footer">
-                        <div className="overlap-group">
-                            <p className="text-wrapper">Datos de soporte de la página: etc</p>
-                        </div>
-                    </footer>
+                    <header className="header">
+                        <img className="image" alt="Image" src={header} />
+                    </header>
                     <div className="formulario">
-                        <div className="div">
-                            <p className="p">¿Se le olvido la contraseña?</p>
-                            <div className="text-wrapper-2">CODIGO DE EMPLEADO:</div>
-                            <div className="text-wrapper-3">CONTRASEÑA:</div>
-                            <div className="text-wrapper-4">LOGIN</div>
+                        <div className="overlap-group">
+                            <p className="text-wrapper">¿Se le olvido la contraseña?</p>
+                            <div className="div">CODIGO DE EMPLEADO:</div>
+                            <div className="text-wrapper-2">CONTRASEÑA:</div>
+                            <div className="text-wrapper-3">LOGIN</div>
                             <div className="input-empleado" />
                             <div className="input-contrasea" />
                             <div className="boton-is">
                                 <div className="div-wrapper">
-                                    <div className="text-wrapper-5">INICIAR SESIÓN</div>
+                                    <div className="text-wrapper-4">INICIAR SESIÓN</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <header className="header">
-                        <img className="image" alt="Image" src="image-1.png" />
-                    </header>
+                    <footer className="footer">
+                        <div className="overlap-2">
+                            <p className="p">Datos de soporte de la página: etc</p>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
     );
 };
+
+export default Login;
